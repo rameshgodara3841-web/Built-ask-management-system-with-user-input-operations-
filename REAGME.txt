@@ -1,0 +1,29 @@
+To-Do List (Python)
+
+This is a simple To-Do List application made using Python.
+It runs in the command line and helps you manage daily tasks.
+
+Features
+
+- View tasks
+- Add tasks
+- Delete tasks
+- Tasks are saved in a file
+
+How to Run
+
+1. Install Python
+2. Open terminal or command prompt
+3. Run the file:
+
+python main.py
+
+How it Works
+
+- Tasks are stored in a file called "tasks.txt"
+- When the program starts, it loads saved tasks
+- You can add or delete tasks anytime
+
+Author
+
+Made using Python
