@@ -1,21 +1,17 @@
 import os
 
 FILE_NAME = "tasks.txt"
-
-# Load tasks
 def load_tasks():
     if os.path.exists(FILE_NAME):
         with open(FILE_NAME, "r") as f:
             return f.read().splitlines()
     return []
 
-# Save tasks
-def save_tasks(tasks):
+
+      def save_tasks(tasks):
     with open(FILE_NAME, "w") as f:
         for task in tasks:
             f.write(task + "\n")
-
-# Show tasks
 def show_tasks(tasks):
     if not tasks:
         print("No tasks found!")
@@ -23,7 +19,6 @@ def show_tasks(tasks):
         for i, task in enumerate(tasks, 1):
             print(f"{i}. {task}")
 
-# Main program
 tasks = load_tasks()
 
 while True:
